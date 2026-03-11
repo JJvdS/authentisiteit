@@ -1,0 +1,126 @@
+.werkwijze
+  width: 100%
+  min-height: auto
+  position: relative
+  top: 0
+  left: 0
+  padding: 120px 0 100px
+
+  .werkwijze-layout
+    width: min(110%, 1240px)
+    margin: 0 auto
+    padding: 0 20px
+    box-sizing: border-box
+    display: grid
+    grid-template-columns: minmax(0, 1.35fr) 190px minmax(0, 1fr)
+    column-gap: 76px
+    align-items: start
+
+  .left-column
+    display: flex
+    flex-direction: column
+
+  .section-wrapper
+    width: 100%
+    color: #002D3C
+    font-family: "Inter", sans-serif
+
+    .section-title
+      text-align: left
+      font-size: clamp(2.2rem, 4vw, 3rem)
+      font-weight: 700
+      line-height: 1.55
+
+    .section-bio
+      margin-top: 16px
+      font-size: clamp(1rem, 1.5vw, 1.2rem)
+      line-height: 1.55
+      width: min(100%, 720px)
+
+      p
+        margin-bottom: 20px
+
+  .section-img
+    position: relative
+    width: min(100%, 980px)
+    margin: 32px 0 0
+    height: auto
+    left: 0
+    top: 0
+    border-radius: 34px
+    background: #3198A5
+    aspect-ratio: 980 / 540
+
+    img
+      position: absolute
+      width: calc(100% - 5px)
+      height: calc(100% - 5px)
+      top: -15px
+      left: -15px
+      border-radius: 34px
+      object-fit: cover
+
+  .werkwijze-stars
+    width: 155px
+    align-self: start
+    justify-self: center
+    margin-top: 28px
+
+  .steps-container
+    width: 100%
+    margin-top: 28px
+    display: flex
+    flex-direction: column
+    gap: 56px
+
+    .step-item
+      font-family: "Inter", sans-serif
+      color: #002D3C
+      font-weight: 600
+      font-size: clamp(1.2rem, 1.5vw, 1.6rem)
+      line-height: 1.55
+
+      .bio
+        margin-top: 8px
+        font-size: clamp(0.88rem, 0.88vw, 1rem)
+        line-height: 1.55
+        font-weight: 400
+        padding-left: 0
+
+  @media screen and (max-width: 1250px)
+    .werkwijze-layout
+      grid-template-columns: 1fr
+      row-gap: 24px
+
+    .steps-container
+      margin-top: 0
+      gap: 26px
+
+    .werkwijze-stars
+      display: none
+
+    .section-img
+      width: 100%
+      max-width: 980px
+
+  @media screen and (max-width: 500px)
+    .section-wrapper
+      .section-title
+        font-size: clamp(1.6rem, 5.5vw, 2.2rem)
+
+      .section-bio
+        font-size: clamp(1rem, 3.8vw, 1.1rem)
+
+  @media screen and (max-width: 410px)
+    .section-wrapper
+      .section-title
+        font-size: clamp(1.5rem, 5vw, 2rem)
+
+      .section-bio
+        font-size: clamp(0.95rem, 3.5vw, 1.05rem)
+
+    .section-img
+      border-radius: 26px
+
+      img
+        border-radius: 26px

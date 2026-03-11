@@ -1,0 +1,211 @@
+$cubic: 1.2s cubic-bezier(.18, .7, .34, .89)
+$cubicfast: .63s cubic-bezier(.18, .7, .34, .89)
+$dark: #18232c
+$accent: #3198A5
+.nav
+  width: 100%
+  height: 120px
+  position: fixed
+  z-index: 100
+  background-color: white
+  top: 0
+  transition: height $cubic, border-bottom $cubic
+  border-bottom: 0.06rem solid white
+  a
+    text-decoration: none
+    color: $dark
+    cursor: pointer
+  .nav-logo
+    position: absolute
+    top: 10%
+    left: 5.14rem
+    height: 80%
+    img
+      height: 100%
+  .nav-wrapper
+    position: absolute
+    height: 80%
+    top: 10%
+    right: 5.14rem
+    width: 34.29rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .nav-item
+      width: 25%
+      height: 60%
+      top: 20%
+      position: relative
+      color: $dark
+      font-family: 'Inter', sans-serif
+      font-weight: 700
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 40px
+      font-size: 1rem
+      span
+        img
+          position: relative
+          width: 0.46rem
+          right: -0.17rem
+          transition: transform $cubicfast
+      &:hover
+        img
+          transform: rotate(90deg)
+      .nav-dropdown
+        width: 100%
+        height: 0
+        position: absolute
+        overflow: hidden
+        top: 50px
+        border-radius: 20px
+        font-size: 0.75rem
+        font-weight: 600
+        left: 0
+        background-color: white
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        align-items: center
+        border: 0 solid white
+        transition: height $cubicfast, font-size $cubicfast, border $cubicfast
+        .dropdown-item
+          margin: 3px 0 3px 0
+          &:nth-child(2)
+            font-size: .72rem
+      &:nth-child(4)
+        background-color: $accent
+        color: white
+      &:nth-child(2):hover
+        opacity: 1 !important
+        .nav-dropdown
+          height: 65px
+          border: 1px solid #002D3C
+.nav-semi
+  height: 90px
+  border-bottom: 0.06rem solid $dark
+  .nav-wrapper .nav-item
+    width: 25%
+    .nav-dropdown .dropdown-item
+      transform: scale(0.95)
+.clickable
+  transition: opacity $cubic, transform $cubic
+  &:hover
+    cursor: pointer
+    opacity: 0.75
+    transform: scale(0.96)
+
+.nav .burger
+  display: none
+  height: 40px
+  width: 40px
+  top: calc(50% - 20px)
+  right: 5.14em
+  position: absolute
+  z-index: 1000
+  .icn
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    height: 100%
+    width: 100%
+    span
+      background-color: #002D3C
+      margin-bottom: 3px
+      height: 2px
+      width: 40px
+      position: relative
+      transition: background-color $cubicfast, transform $cubicfast, top $cubicfast, opacity $cubicfast
+      &:nth-child(1)
+        transform: translateY(-10px)
+      &:nth-child(2)
+        opacity: 1
+      &:nth-child(3)
+        transform: translateY(10px)
+  &.active
+    .icn
+      span
+        background-color: white
+        &:nth-child(1)
+          transform: rotate(45deg)
+          top: 10px
+        &:nth-child(2)
+          opacity: 0
+        &:nth-child(3)
+          transform: rotate(-45deg)
+
+.nav .menu
+  position: fixed
+  width: 100vw
+  height: 100vh
+  left: 0
+  pointer-events: none
+  top: 0
+  opacity: 0
+  display: none
+  transition: opacity .33s cubic-bezier(.18, .7, .34, .89)
+  .items-container
+    width: 80%
+    left: 10%
+    top: 50%
+    transform: translateY(-50%)
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    z-index: 1
+    .menu-item
+      font-size: 2rem
+      font-weight: 600
+      font-family: 'Inter', sans-serif
+      color: white
+      align-content: center
+      justify-content: center
+      text-align: center
+      width: 100%
+      height: 100px
+      border-radius: 25px
+      pointer-events: none
+      margin-bottom: 5px
+      a
+        color: white
+        text-decoration: none
+        &:visited, &:hover, &:active
+          color: white
+      &:nth-child(3)
+        margin: 0
+  .menu-bg
+    width: 50px
+    position: absolute
+    left: 0
+    bottom: 0
+    height: 50px
+    background-color: #002D3C
+    border-radius: 100%
+    transform: scale(0)
+    transition: transform $cubic
+  &.active
+    opacity: 1
+    .menu-bg
+      transform: scale(100)
+    .items-container
+      .menu-item
+        pointer-events: all
+
+@media screen and (max-width: 1000px)
+  .nav .nav-wrapper
+    display: none
+  .nav .burger
+    pointer-events: all
+    display: block
+  .nav .menu
+    display: block
+
+@media screen and (max-width: 763px)
+  .nav .burger
+    right: 10%
+  .nav .nav-logo
+    left: 10%

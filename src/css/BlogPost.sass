@@ -1,0 +1,94 @@
+.blog-post
+  width: 100%
+  min-height: auto
+  position: relative
+  padding: 145px 0 170px
+  color: #002D3C
+  font-family: "Inter", sans-serif
+
+  .blog-post-container
+    width: min(100%, 980px)
+    margin: 0 auto
+    padding: 0 20px
+    box-sizing: border-box
+
+  .back-link
+    display: inline-flex
+    text-decoration: none
+    color: #2A6B75
+    font-size: 0.95rem
+    font-weight: 600
+    margin-bottom: 18px
+
+  .post-nav
+    margin-bottom: 20px
+    display: grid
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    gap: 14px
+
+    .post-nav-btn
+      min-height: 60px
+      border-radius: 20px
+      border: 1px solid #002D3C
+      color: #002D3C
+      text-decoration: none
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      padding: 12px 16px
+      line-height: 1.35
+      font-weight: 600
+      transition: transform .63s cubic-bezier(.18, .7, .34, .89), opacity .63s cubic-bezier(.18, .7, .34, .89)
+
+      &:hover
+        transform: scale(0.98)
+        opacity: 0.8
+
+  .post-meta
+    font-size: 0.9rem
+    color: #456272
+    font-weight: 600
+    line-height: 1.4
+
+  h1
+    margin-top: 10px
+    font-size: clamp(2.1rem, 4.2vw, 3.3rem)
+    line-height: 1.14
+    font-weight: 700
+
+  .post-image
+    margin-top: 30px
+    width: 100%
+    max-width: 920px
+    border-radius: 30px
+    background-color: #3198A5
+    aspect-ratio: 920 / 500
+    position: relative
+
+    img
+      position: absolute
+      width: calc(100% - 5px)
+      height: calc(100% - 5px)
+      top: -12px
+      left: -12px
+      border-radius: 30px
+      object-fit: cover
+
+  .post-content
+    margin-top: 32px
+    max-width: 900px
+
+    p
+      margin-bottom: 18px
+      font-size: clamp(1.04rem, 1.28vw, 1.16rem)
+      line-height: 1.65
+
+  @media screen and (max-width: 820px)
+    padding: 120px 0 120px
+
+    .blog-post-container
+      padding: 0 5%
+
+    .post-nav
+      grid-template-columns: 1fr

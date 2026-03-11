@@ -1,0 +1,75 @@
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s cubic-bezier(0.18, 0.7, 0.34, 0.89) 1s;
+  will-change: opacity, transform;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: visible;
+  top: 0;
+  left: 0;
+}
+
+.content-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: -10px 0 15px -5px rgba(0, 45, 60, 0.7), 10px 0 15px -5px rgba(0, 45, 60, 0.7);
+}
+
+.content-container {
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+.home-hoeikhelp-cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 12px 0 90px;
+}
+
+.home-hoeikhelp-link {
+  min-width: 200px;
+  height: 60px;
+  padding: 0 28px;
+  position: relative;
+  border-radius: 40px;
+  border: 0.1vw solid #002D3C;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  white-space: nowrap;
+  color: #002D3C;
+  text-decoration: none;
+  margin-right: 0;
+}
+
+.home-hoeikhelp-link:visited,
+.home-hoeikhelp-link:hover,
+.home-hoeikhelp-link:active {
+  color: #002D3C;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .home-hoeikhelp-cta {
+    margin: 10px 0 60px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
