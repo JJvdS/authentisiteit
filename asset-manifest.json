@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/authentisiteit/static/css/main.81ea5c96.css",
+    "main.js": "/authentisiteit/static/js/main.d1133499.js",
+    "static/js/453.5bb9f015.chunk.js": "/authentisiteit/static/js/453.5bb9f015.chunk.js",
+    "static/media/photo6.webp": "/authentisiteit/static/media/photo6.934743e0c283c7be6280.webp",
+    "static/media/photo7.webp": "/authentisiteit/static/media/photo7.d9a6d5d913298f79480c.webp",
+    "static/media/photo3.webp": "/authentisiteit/static/media/photo3.83ef72b0f252bc53fccf.webp",
+    "static/media/photo4.webp": "/authentisiteit/static/media/photo4.7fd328a5fccc25ceee29.webp",
+    "static/media/img1.webp": "/authentisiteit/static/media/img1.65b3b6abbdef4efac547.webp",
+    "static/media/img2.webp": "/authentisiteit/static/media/img2.4b414c6c73c412a4ab53.webp",
+    "static/media/photo5.webp": "/authentisiteit/static/media/photo5.e4834e659ce92cf8b05c.webp",
+    "static/media/photo10.webp": "/authentisiteit/static/media/photo10.ac54d5f67b512608bf45.webp",
+    "static/media/img3.webp": "/authentisiteit/static/media/img3.82bb391cc0c99b497e34.webp",
+    "static/media/photo8.webp": "/authentisiteit/static/media/photo8.3913ba59844c13ed12cc.webp",
+    "static/media/photo9.webp": "/authentisiteit/static/media/photo9.7c9714522a3d153aad5a.webp",
+    "static/media/photo12.webp": "/authentisiteit/static/media/photo12.26d161dbf7f98dd402d6.webp",
+    "static/media/photo2.webp": "/authentisiteit/static/media/photo2.cafdf71b387d3093789e.webp",
+    "static/media/werkwijze.webp": "/authentisiteit/static/media/werkwijze.b7ce6e646456567f0391.webp",
+    "static/media/logo.svg": "/authentisiteit/static/media/logo.31f222b981c6113dc94b1bd86188301c.svg",
+    "static/media/stars.svg": "/authentisiteit/static/media/stars.db7e195f1195368f3087eea93bc01a0e.svg",
+    "index.html": "/authentisiteit/index.html",
+    "main.81ea5c96.css.map": "/authentisiteit/static/css/main.81ea5c96.css.map",
+    "main.d1133499.js.map": "/authentisiteit/static/js/main.d1133499.js.map",
+    "453.5bb9f015.chunk.js.map": "/authentisiteit/static/js/453.5bb9f015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81ea5c96.css",
+    "static/js/main.d1133499.js"
+  ]
+}

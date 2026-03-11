@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://authentisiteit.com/sitemap.xml
